@@ -143,9 +143,9 @@ const Contact = () => {
               <div className="flex justify-end">
                 <button
                   type="submit"
-                  className={`${barlowBold.className} btn btn-lg bg-btn-gradient text-white`}
+                  className={`${barlowBold.className} btn rounded-full btn-lg bg-btn-gradient text-white`}
                 >
-                  Submit Form
+                  SEND MESSAGE
                 </button>
               </div>
             </div>

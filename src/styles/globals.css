@@ -12,10 +12,10 @@ html {
 }
 
 .textInput {
-    @apply input input-bordered;
+    @apply input input-bordered rounded-full;
 
 }
 
 .textArea {
-    @apply textarea textarea-bordered resize-none;
+    @apply textarea textarea-bordered resize-none rounded-3xl;
 }
