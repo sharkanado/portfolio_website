@@ -7,11 +7,19 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      "dark-grey": "#1f1f1f",
+      purple: "#7a4cff",
+      pink: "#be01d0",
+      blackTrans: "#0000044",
+      black: "#000",
+      white: "#fff",
+      transparent: "#ffffff00",
+    },
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "text-gradient":
+          "linear-gradient(90deg,  rgba(190,1,208,1) 0%, rgba(122,76,255,1) 50%)",
       },
     },
   },

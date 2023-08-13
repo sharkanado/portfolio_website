@@ -1,8 +1,23 @@
-import {Abel} from "next/font/google";
+import {Montserrat, Barlow} from "next/font/google";
 
-const abel = Abel({
+const barlow = Barlow({
   subsets: ["latin"],
   weight: "400",
 });
 
-export {abel};
+const barlowBold = Barlow({
+  subsets: ["latin"],
+  weight: "600",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const montserratBold = Montserrat({
+  subsets: ["latin"],
+  weight: "600",
+});
+
+export {barlow, montserrat, montserratBold, barlowBold};

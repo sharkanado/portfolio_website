@@ -1,20 +1,24 @@
 import Link from "next/link";
 import React from "react";
-import {abel} from "../styles/fonts";
+import {barlowBold} from "../styles/fonts";
 
 const Navbar = () => {
   const navLinks = [
-    {name: "About", link: ""},
-    {name: "Portfolio", link: ""},
-    {name: "Contact", link: ""},
+    {name: "about", link: ""},
+    {name: "portfolio", link: ""},
+    {name: "contact", link: ""},
   ];
 
   return (
-    <div className="flex justify-end py-8">
-      <nav className="flex gap-12">
+    <div className="py-8 sticky top-0 left-0">
+      <nav className="flex gap-12 container mx-auto justify-end">
         {navLinks.map(({name, link}, idx) => (
-          <Link key={idx} href={link} className={`${abel.className} text-xl`}>
-            {name}
+          <Link
+            key={idx}
+            href={link}
+            className={`${barlowBold.className} text-xl`}
+          >
+            .{name}
           </Link>
         ))}
       </nav>
