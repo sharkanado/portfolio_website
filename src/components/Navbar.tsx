@@ -4,9 +4,9 @@ import {montserrat} from "@/src/styles/fonts";
 
 const Navbar = () => {
   const navLinks = [
-    {name: "about", link: ""},
-    {name: "skills & experience", link: ""},
-    {name: "contact", link: ""},
+    {name: "hello", link: "#"},
+    {name: "about", link: "#about"},
+    {name: "contact", link: "#contact"},
   ];
 
   const [scrollY, setScrollY] = useState(0);

@@ -5,6 +5,7 @@
 body,
 html {
     @apply bg-grey text-white overscroll-none;
+    scroll-behavior: smooth;
 }
 
 .gradientText {

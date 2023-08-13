@@ -24,7 +24,7 @@ export default function Home() {
 
 const Hero = () => {
   return (
-    <div className="container mx-auto before:flex flex-col mt-40 h-[68vh]">
+    <div className="container mx-auto before:flex flex-col mt-40 mb-56">
       <div className="flex justify-between">
         <div>
           <div className="flex gap-5">
@@ -55,10 +55,12 @@ const Hero = () => {
 
 const Info = () => {
   return (
-    <div className="flex w-full mb-20">
-      <About />
-      <Skills />
-    </div>
+    <section id="about">
+      <div className="flex w-full pt-24 pb-20">
+        <About />
+        <Skills />
+      </div>
+    </section>
   );
 };
 
@@ -105,51 +107,53 @@ const About = () => {
 
 const Contact = () => {
   return (
-    <div className="pb-20">
-      <SectionHeader>Contact Me</SectionHeader>
-      <div className="flex">
-        <div className="flex-1"></div>
-        <div className="flex-1">
-          <form
-            target="_blank"
-            action="https://formsubmit.co/m.michalska4126@gmail.com"
-            method="POST"
-          >
-            <div className="flex flex-col gap-5">
-              <input
-                type="text"
-                name="name"
-                className={`${montserrat.className} textInput`}
-                placeholder="Full Name"
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                className={`${montserrat.className} textInput`}
-                placeholder="Email Address"
-                required
-              />
-              <textarea
-                placeholder="Your Message"
-                className={`${montserrat.className} textArea`}
-                style={{fontSize: "16px"}}
-                name="message"
-                rows={10}
-                required
-              />
-              <div className="flex justify-end">
-                <button
-                  type="submit"
-                  className={`${barlowBold.className} btn rounded-full btn-lg bg-btn-gradient text-white`}
-                >
-                  SEND MESSAGE
-                </button>
+    <section id="contact">
+      <div className="pb-20 pt-24">
+        <SectionHeader>Contact Me</SectionHeader>
+        <div className="flex">
+          <div className="flex-1"></div>
+          <div className="flex-1">
+            <form
+              target="_blank"
+              action="https://formsubmit.co/m.michalska4126@gmail.com"
+              method="POST"
+            >
+              <div className="flex flex-col gap-5">
+                <input
+                  type="text"
+                  name="name"
+                  className={`${montserrat.className} textInput`}
+                  placeholder="Full Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  className={`${montserrat.className} textInput`}
+                  placeholder="Email Address"
+                  required
+                />
+                <textarea
+                  placeholder="Your Message"
+                  className={`${montserrat.className} textArea`}
+                  style={{fontSize: "16px"}}
+                  name="message"
+                  rows={10}
+                  required
+                />
+                <div className="flex justify-end">
+                  <button
+                    type="submit"
+                    className={`${barlowBold.className} btn rounded-full btn-lg bg-btn-gradient text-white`}
+                  >
+                    SEND MESSAGE
+                  </button>
+                </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
