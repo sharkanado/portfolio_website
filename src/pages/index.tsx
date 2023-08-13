@@ -11,10 +11,8 @@ import {montserratBold, montserrat, barlowBold} from "@/src/styles/fonts";
 export default function Home() {
   return (
     <>
-      <div className="h-screen">
-        <Navbar />
-        <Hero />
-      </div>
+      <Navbar />
+      <Hero />
       <MainWrapper>
         <Info />
         <Contact />
@@ -26,7 +24,7 @@ export default function Home() {
 
 const Hero = () => {
   return (
-    <div className="container mx-auto before:flex flex-col mt-40 h-[65vh]">
+    <div className="container h-screen mx-auto before:flex flex-col mt-40 h-[65vh]">
       <div className="flex justify-between">
         <div>
           <div className="flex gap-5">
