@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import {barlowBold} from "../styles/fonts";
+import {montserrat} from "../styles/fonts";
 
 const Navbar = () => {
   const navLinks = [
@@ -16,9 +16,9 @@ const Navbar = () => {
           <Link
             key={idx}
             href={link}
-            className={`${barlowBold.className} text-xl`}
+            className={`${montserrat.className} text-xl`}
           >
-            .{name}
+            {name}
           </Link>
         ))}
       </nav>
