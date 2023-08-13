@@ -5,7 +5,7 @@ import {montserrat} from "../styles/fonts";
 const Navbar = () => {
   const navLinks = [
     {name: "about", link: ""},
-    {name: "portfolio", link: ""},
+    {name: "skills & experience", link: ""},
     {name: "contact", link: ""},
   ];
 

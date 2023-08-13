@@ -1,26 +1,35 @@
 import React from "react";
-import {MainWrapper} from "@/src/components";
-import {montserratBold, montserrat, barlowBold} from "../styles/fonts";
-import {FaLinkedinIn, FaGithub, FaFacebook} from "react-icons/fa";
 import Link from "next/link";
+import {FaLinkedinIn, FaGithub} from "react-icons/fa";
+import {Footer, MainWrapper, Navbar, SectionHeader} from "@/src/components";
+import {montserratBold, montserrat, barlowBold} from "@/src/styles/fonts";
 
 export default function Home() {
   return (
-    <MainWrapper>
-      <Hero />
-    </MainWrapper>
+    <>
+      <div className="h-screen">
+        <Navbar />
+        <Hero />
+      </div>
+      <MainWrapper>
+        <Info />
+      </MainWrapper>
+      <Footer />
+    </>
   );
 }
 
 const Hero = () => {
   const iconSize = 30;
   const socialLinks = [
-    {icon: <FaGithub size={iconSize} />, link: ""},
-    {icon: <FaLinkedinIn size={iconSize} />, link: ""},
-    {icon: <FaFacebook size={iconSize} />, link: ""},
+    {icon: <FaGithub size={iconSize} />, link: "https://github.com/sharkanado"},
+    {
+      icon: <FaLinkedinIn size={iconSize} />,
+      link: "https://www.linkedin.com/in/martyna-michalska-3a7048234/",
+    },
   ];
   return (
-    <div className="h-screen flex flex-col mt-40">
+    <div className="container mx-auto before:flex flex-col mt-40 h-[65vh]">
       <div className="flex justify-between">
         <div>
           <div className="flex gap-5">
@@ -51,6 +60,55 @@ const Hero = () => {
           ))}
         </div>
       </div>
+    </div>
+  );
+};
+
+const Info = () => {
+  return (
+    <div className="flex w-full mb-20">
+      <About />
+      <Skills />
+    </div>
+  );
+};
+
+const Skills = () => {
+  const technologies = [
+    "HTML",
+    "CSS",
+    "SASS",
+    "Git",
+    "TypeScript",
+    "JavaScript",
+    "React",
+    "NextJS",
+    "Vue",
+    "NuxtJS",
+    "MaterialUI",
+    "TailwindCSS",
+    "Figma",
+  ];
+  return (
+    <div className="w-1/3">
+      <SectionHeader>Skills</SectionHeader>
+      <div>
+        {technologies.map((item) => (
+          <div className="bg-[#333] mr-3 py-2 px-4 inline-block mb-3 rounded-full">
+            <span className={montserratBold.className}>{item}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+const About = () => {
+  return (
+    <div className="w-2/3">
+      <SectionHeader>About Me</SectionHeader>
+      <p
+        className={`${montserrat.className} leading-loose max-w-5xl text-xl`}
+      ></p>
     </div>
   );
 };
