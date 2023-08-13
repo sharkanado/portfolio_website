@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import {FaLinkedinIn, FaGithub} from "react-icons/fa";
 
 const SocialLinksVertical = ({size}: {size: number}) => {
@@ -17,9 +16,9 @@ const SocialLinksVertical = ({size}: {size: number}) => {
   return (
     <div className="flex flex-col gap-10 justify-center">
       {socialLinks.map(({icon, link}, idx) => (
-        <Link key={idx} href={link}>
+        <a key={idx} target="_blank" href={link}>
           {icon}
-        </Link>
+        </a>
       ))}
     </div>
   );
@@ -40,9 +39,9 @@ const SocialLinksHorizontal = ({size}: {size: number}) => {
   return (
     <div className="flex gap-10 justify-center">
       {socialLinks.map(({icon, link}, idx) => (
-        <Link key={idx} href={link}>
+        <a key={idx} target="_blank" href={link}>
           {icon}
-        </Link>
+        </a>
       ))}
     </div>
   );
