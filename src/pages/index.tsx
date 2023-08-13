@@ -17,6 +17,7 @@ export default function Home() {
       </div>
       <MainWrapper>
         <Info />
+        <Contact />
       </MainWrapper>
       <Footer />
     </>
@@ -92,6 +93,7 @@ const Skills = () => {
     </div>
   );
 };
+
 const About = () => {
   return (
     <div className="w-2/3">
@@ -99,6 +101,57 @@ const About = () => {
       <p
         className={`${montserrat.className} leading-loose max-w-5xl text-xl`}
       ></p>
+    </div>
+  );
+};
+
+const Contact = () => {
+  return (
+    <div className="pb-20">
+      <SectionHeader>Contact Me</SectionHeader>
+      <div className="flex">
+        <div className="flex-1"></div>
+        <div className="flex-1">
+          <form
+            target="_blank"
+            action="https://formsubmit.co/m.michalska4126@gmail.com"
+            method="POST"
+          >
+            <div className="flex flex-col gap-5">
+              <input
+                type="text"
+                name="name"
+                className={`${montserrat.className} textInput`}
+                placeholder="Full Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                className={`${montserrat.className} textInput`}
+                placeholder="Email Address"
+                required
+              />
+              <textarea
+                placeholder="Your Message"
+                className={`${montserrat.className} textArea`}
+                style={{fontSize: "16px"}}
+                name="message"
+                rows={10}
+                required
+              />
+              <div className="flex justify-end">
+                <button
+                  type="submit"
+                  className={`${barlowBold.className} btn btn-lg bg-btn-gradient text-white`}
+                >
+                  Submit Form
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   );
 };

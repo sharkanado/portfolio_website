@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <div
       className={`py-8 sticky top-0 left-0 transition-all duration-75 + ${
-        isOnTop ? "" : "bg-[#141414]"
+        isOnTop ? "" : "bg-dark-grey"
       }`}
     >
       <nav className="flex gap-12 container mx-auto justify-end">

@@ -10,3 +10,12 @@ html {
 .gradientText {
     @apply text-transparent bg-clip-text bg-text-gradient;
 }
+
+.textInput {
+    @apply input input-bordered;
+
+}
+
+.textArea {
+    @apply textarea textarea-bordered resize-none;
+}
