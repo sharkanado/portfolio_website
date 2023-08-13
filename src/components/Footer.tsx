@@ -4,7 +4,9 @@ import {SocialLinksHorizontal} from "./SocialLinks";
 
 const Footer = () => {
   return (
-    <div className={`${montserrat.className} bg-dark-grey py-10`}>
+    <div
+      className={`${montserrat.className} bg-dark-grey py-10 flex justify-center`}
+    >
       <SocialLinksHorizontal size={20} />
     </div>
   );

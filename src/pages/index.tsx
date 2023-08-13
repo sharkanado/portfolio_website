@@ -4,6 +4,7 @@ import {
   MainWrapper,
   Navbar,
   SectionHeader,
+  SocialLinksHorizontal,
   SocialLinksVertical,
 } from "@/src/components";
 import {montserratBold, montserrat, barlowBold} from "@/src/styles/fonts";
@@ -24,19 +25,19 @@ export default function Home() {
 
 const Hero = () => {
   return (
-    <div className="container mx-auto before:flex flex-col mt-40 mb-56">
-      <div className="flex justify-between">
+    <div className="container mx-auto before:flex flex-col pt-40 lg:pb-56 pb-20">
+      <div className="flex flex-col lg:flex-row justify-between mx-5">
         <div>
           <div className="flex gap-5">
             <p
-              className={`${barlowBold.className} text-6xl pb-10 gradientText`}
+              className={`${barlowBold.className} text-5xl sm:text-6xl pb-10 gradientText`}
             >
               Hello, I'm Martyna
             </p>
-            <img src="/waving-hand.png" className="h-14" />
+            <img src="/waving-hand.png" className="sm:h-14 h-10" />
           </div>
           <p
-            className={`${montserrat.className} leading-loose max-w-5xl text-xl`}
+            className={`${montserrat.className} leading-loose max-w-3xl xl:max-w-5xl text-xl`}
           >
             I am a budding Software Developer. Obsessed with clean code and
             captivating designs. Proficient in HTML, CSS, and JavaScript.
@@ -47,7 +48,12 @@ const Hero = () => {
             </span>
           </p>
         </div>
-        <SocialLinksVertical size={30} />
+        <div className="lg:hidden mt-16">
+          <SocialLinksHorizontal size={30} />
+        </div>
+        <div className="hidden lg:block">
+          <SocialLinksVertical size={30} />
+        </div>
       </div>
     </div>
   );
@@ -56,7 +62,7 @@ const Hero = () => {
 const Info = () => {
   return (
     <section id="about">
-      <div className="flex w-full pt-24 pb-20">
+      <div className="lg:flex w-full pt-24">
         <About />
         <Skills />
       </div>
@@ -81,7 +87,7 @@ const Skills = () => {
     "Figma",
   ];
   return (
-    <div className="w-1/3">
+    <div className="lg:w-1/3">
       <SectionHeader>Skills</SectionHeader>
       <div>
         {technologies.map((item) => (
@@ -96,11 +102,23 @@ const Skills = () => {
 
 const About = () => {
   return (
-    <div className="w-2/3">
+    <div className="lg:w-2/3 lg:mb-0 mb-20">
       <SectionHeader>About Me</SectionHeader>
-      <p
-        className={`${montserrat.className} leading-loose max-w-5xl text-xl`}
-      ></p>
+      <p className={`${montserrat.className} leading-loose max-w-5xl text-xl`}>
+        My journey into the world of web development started when I discovered
+        the magic of HTML, CSS, and JavaScript. Since then, I've been on an
+        exhilarating learning curve, constantly honing my skills and soaking up
+        knowledge about the latest trends and technologies in the frontend{" "}
+        <br />
+        <br />
+        realm. My toolkit includes proficiency in HTML5 and CSS3, and I'm adept
+        at crafting responsive, mobile-first designs that ensure seamless user
+        experiences across devices. I'm also well-versed in JavaScript and have
+        experience working with libraries like React, where I enjoy bringing
+        interactivity and dynamic features to life. In addition to my technical
+        skills, I'm a firm believer in the importance of collaboration and
+        communication.
+      </p>
     </div>
   );
 };
@@ -110,7 +128,7 @@ const Contact = () => {
     <section id="contact">
       <div className="pb-20 pt-24">
         <SectionHeader>Contact Me</SectionHeader>
-        <div className="flex">
+        <div className="lg:flex">
           <div className="flex-1"></div>
           <div className="flex-1">
             <form
