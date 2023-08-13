@@ -1,7 +1,11 @@
 import React from "react";
-import Link from "next/link";
-import {FaLinkedinIn, FaGithub} from "react-icons/fa";
-import {Footer, MainWrapper, Navbar, SectionHeader} from "@/src/components";
+import {
+  Footer,
+  MainWrapper,
+  Navbar,
+  SectionHeader,
+  SocialLinksVertical,
+} from "@/src/components";
 import {montserratBold, montserrat, barlowBold} from "@/src/styles/fonts";
 
 export default function Home() {
@@ -20,14 +24,6 @@ export default function Home() {
 }
 
 const Hero = () => {
-  const iconSize = 30;
-  const socialLinks = [
-    {icon: <FaGithub size={iconSize} />, link: "https://github.com/sharkanado"},
-    {
-      icon: <FaLinkedinIn size={iconSize} />,
-      link: "https://www.linkedin.com/in/martyna-michalska-3a7048234/",
-    },
-  ];
   return (
     <div className="container mx-auto before:flex flex-col mt-40 h-[65vh]">
       <div className="flex justify-between">
@@ -52,13 +48,7 @@ const Hero = () => {
             </span>
           </p>
         </div>
-        <div className="flex flex-col gap-10 justify-center">
-          {socialLinks.map(({icon, link}, idx) => (
-            <Link key={idx} href={link}>
-              {icon}
-            </Link>
-          ))}
-        </div>
+        <SocialLinksVertical size={30} />
       </div>
     </div>
   );

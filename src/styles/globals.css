@@ -4,7 +4,7 @@
 
 body,
 html {
-    @apply bg-dark-grey text-white overscroll-none;
+    @apply bg-grey text-white overscroll-none;
 }
 
 .gradientText {

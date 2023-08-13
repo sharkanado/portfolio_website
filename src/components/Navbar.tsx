@@ -1,6 +1,6 @@
-import Link from "next/link";
 import React, {useCallback, useEffect, useState} from "react";
-import {montserrat} from "../styles/fonts";
+import Link from "next/link";
+import {montserrat} from "@/src/styles/fonts";
 
 const Navbar = () => {
   const navLinks = [

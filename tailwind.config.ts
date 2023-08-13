@@ -8,7 +8,8 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      "dark-grey": "#1f1f1f",
+      grey: "#1f1f1f",
+      "dark-grey": "#141414",
       purple: "#7a4cff",
       pink: "#be01d0",
       blackTrans: "#0000044",

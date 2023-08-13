@@ -1,4 +1,5 @@
-import {barlowBold} from "../styles/fonts";
+import React from "react";
+import {barlowBold} from "@/src/styles/fonts";
 
 const SectionHeader = ({children}: {children: React.ReactNode}) => {
   return (
