@@ -16,7 +16,12 @@ const SocialLinksVertical = ({size}: {size: number}) => {
   return (
     <div className="flex flex-col gap-10 justify-center">
       {socialLinks.map(({icon, link}, idx) => (
-        <a key={idx} target="_blank" href={link}>
+        <a
+          key={idx}
+          className="btn btn-ghost rounded-full btn-square"
+          target="_blank"
+          href={link}
+        >
           {icon}
         </a>
       ))}
@@ -39,7 +44,12 @@ const SocialLinksHorizontal = ({size}: {size: number}) => {
   return (
     <div className="flex gap-10 justify-center">
       {socialLinks.map(({icon, link}, idx) => (
-        <a key={idx} target="_blank" href={link}>
+        <a
+          key={idx}
+          className="btn btn-ghost rounded-full btn-square"
+          target="_blank"
+          href={link}
+        >
           {icon}
         </a>
       ))}
