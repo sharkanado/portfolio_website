@@ -10,9 +10,14 @@ const Navbar = () => {
   ];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   const handleClickOutside = (event: MouseEvent) => {
-    if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+    if (
+      menuRef.current &&
+      !menuRef.current.contains(event.target as Node) &&
+      event.target !== buttonRef.current
+    ) {
       setIsMenuOpen(false);
     }
   };
@@ -50,6 +55,7 @@ const Navbar = () => {
       <div className="md:hidden flex flex-col items-end w-full fixed  top-0 left-0 p-5 bg-opacity-50 bg-black">
         <div className="">
           <button
+            ref={buttonRef}
             className="btn btn-ghost rounded-full btn-square"
             onClick={() => setIsMenuOpen((prev) => !prev)}
           >
