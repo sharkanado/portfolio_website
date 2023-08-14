@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import {montserrat} from "@/src/styles/fonts";
 import {FaBars} from "react-icons/fa";
 
@@ -9,6 +9,25 @@ const Navbar = () => {
     {name: "contact", link: "#contact"},
   ];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+      setIsMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMenuOpen]);
 
   return (
     <div>
@@ -38,6 +57,7 @@ const Navbar = () => {
           </button>
         </div>
         <nav
+          ref={menuRef}
           className="flex-col flex items-center gap-12 px-5 container mx-auto justify-end transition-all"
           style={{
             height: isMenuOpen ? "10rem" : "0rem",
