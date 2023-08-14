@@ -10,6 +10,7 @@ const config: Config = {
     colors: {
       grey: "#1f1f1f",
       "dark-grey": "#141414",
+      "light-grey": "#ddd",
       purple: "#7a4cff",
       pink: "#be01d0",
       blackTrans: "#0000044",

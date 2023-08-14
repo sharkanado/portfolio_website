@@ -38,7 +38,7 @@ const Navbar = () => {
           <Link
             key={idx}
             href={link}
-            className={`${montserrat.className} text-xl uppercase`}
+            className={`${montserrat.className} text-xl uppercase hover:text-pink transition-all`}
           >
             {name}
           </Link>
