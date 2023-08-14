@@ -105,19 +105,23 @@ const About = () => {
     <div className="lg:w-2/3 lg:mb-0 mb-20">
       <SectionHeader>About Me</SectionHeader>
       <Paragraph align="text-left">
-        My journey into the world of web development started when I discovered
-        the magic of HTML, CSS, and JavaScript. Since then, I've been on an
-        exhilarating learning curve, constantly honing my skills and soaking up
-        knowledge about the latest trends and technologies in the frontend{" "}
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
+        Vivamus euismod lacus ut nisi lobortis, eu fermentum nulla feugiat. Nunc
+        eget ligula sit amet purus porttitor malesuada. Sed ut quam eu libero
+        volutpat hendrerit vel vel magna. Phasellus sit amet quam vel tortor
+        gravida viverra. Nullam dictum, arcu et hendrerit consequat, purus purus
         <br />
         <br />
-        realm. My toolkit includes proficiency in HTML5 and CSS3, and I'm adept
-        at crafting responsive, mobile-first designs that ensure seamless user
-        experiences across devices. I'm also well-versed in JavaScript and have
-        experience working with libraries like React, where I enjoy bringing
-        interactivity and dynamic features to life. In addition to my technical
-        skills, I'm a firm believer in the importance of collaboration and
-        communication.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
+        Vivamus euismod lacus ut nisi lobortis, eu fermentum nulla feugiat. Nunc
+        eget ligula sit amet purus porttitor malesuada. Sed ut quam eu libero
+        volutpat hendrerit vel vel magna. Phasellus sit amet quam vel tortor
+        gravida viverra. Nullam dictum, arcu et hendrerit consequat, purus purus
+        porttitor nulla, eget cursus dui augue ac risus. In eu ex et urna
+        vestibulum fermentum. Proin eu nisi sed ligula fringilla ullamcorper id
+        in justo. Vivamus eget ligula nisl. Suspendisse non pharetra nulla. Sed
+        quis ante in elit feugiat lacinia at in ligula. Sed quis ex nec quam
+        aliquam blandit et nec urna.
       </Paragraph>
     </div>
   );

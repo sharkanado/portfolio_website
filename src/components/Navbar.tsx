@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`hidden sm:block py-8 sticky top-0 left-0 transition-all duration-75 + ${
+      className={`hidden sm:block py-8 sticky top-0 left-0 transition-all ${
         isOnTop ? "" : "bg-dark-grey"
       }`}
     >
