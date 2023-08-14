@@ -4,7 +4,7 @@ import {montserrat} from "@/src/styles/fonts";
 
 const Navbar = () => {
   const navLinks = [
-    {name: "hello", link: "#"},
+    {name: "home", link: "#"},
     {name: "about", link: "#about"},
     {name: "contact", link: "#contact"},
   ];
@@ -38,7 +38,7 @@ const Navbar = () => {
           <Link
             key={idx}
             href={link}
-            className={`${montserrat.className} text-xl`}
+            className={`${montserrat.className} text-xl uppercase`}
           >
             {name}
           </Link>

@@ -3,6 +3,7 @@ import {
   Footer,
   MainWrapper,
   Navbar,
+  Paragraph,
   SectionHeader,
   SocialLinksHorizontal,
   SocialLinksVertical,
@@ -28,24 +29,23 @@ const Hero = () => {
     <div className="container mx-auto before:flex flex-col pt-40 lg:pb-56 pb-20">
       <div className="flex flex-col lg:flex-row justify-between mx-5">
         <div>
-          <div className="flex gap-5">
-            <p
-              className={`${barlowBold.className} text-5xl sm:text-6xl pb-10 gradientText`}
-            >
-              Hello, I'm Martyna
-            </p>
-            <img src="/waving-hand.png" className="sm:h-14 h-10" />
-          </div>
           <p
-            className={`${montserrat.className} leading-loose max-w-3xl xl:max-w-5xl text-xl`}
+            className={`${barlowBold.className} text-5xl sm:text-6xl pb-10 gradientText`}
           >
+            Hello, <br className="sm:hidden" /> I'm Martyna
+            <img
+              src="/waving-hand.png"
+              className="sm:h-14 h-10 inline ml-5 mb-4"
+            />
+          </p>
+          <Paragraph align="text-left">
             I am a budding Software Developer. Obsessed with clean code and
             captivating designs. Proficient in HTML, CSS, and JavaScript.
             Turning ideas into pixel-perfect reality. Eager to learn and
             collaborate. <br />
-            <span className={montserratBold.className}>
-              Let's build the web together!
-            </span>
+          </Paragraph>
+          <p className={`${montserratBold.className} mt-4 text-xl text-purple`}>
+            Let's build the web together!
           </p>
         </div>
         <div className="lg:hidden mt-16">
@@ -62,7 +62,7 @@ const Hero = () => {
 const Info = () => {
   return (
     <section id="about">
-      <div className="lg:flex w-full pt-24">
+      <div className="lg:flex w-full pt-24 lg:gap-36">
         <About />
         <Skills />
       </div>
@@ -104,7 +104,7 @@ const About = () => {
   return (
     <div className="lg:w-2/3 lg:mb-0 mb-20">
       <SectionHeader>About Me</SectionHeader>
-      <p className={`${montserrat.className} leading-loose max-w-5xl text-xl`}>
+      <Paragraph align="text-left">
         My journey into the world of web development started when I discovered
         the magic of HTML, CSS, and JavaScript. Since then, I've been on an
         exhilarating learning curve, constantly honing my skills and soaking up
@@ -118,7 +118,7 @@ const About = () => {
         interactivity and dynamic features to life. In addition to my technical
         skills, I'm a firm believer in the importance of collaboration and
         communication.
-      </p>
+      </Paragraph>
     </div>
   );
 };
@@ -126,11 +126,16 @@ const About = () => {
 const Contact = () => {
   return (
     <section id="contact">
-      <div className="pb-20 pt-24">
+      <div className="pb-20 pt-24 flex flex-col items-center">
         <SectionHeader>Contact Me</SectionHeader>
-        <div className="lg:flex">
-          <div className="flex-1"></div>
-          <div className="flex-1">
+        <div>
+          <div className="flex-1 mb-10">
+            <Paragraph align="text-center">
+              Feel free to contact me by submitting the form below and I will
+              get back to you as soon as possible!
+            </Paragraph>
+          </div>
+          <div className="max-w-2xl mx-auto p-5 bg-dark-grey shadow-md rounded-xl">
             <form
               target="_blank"
               action="https://formsubmit.co/m.michalska4126@gmail.com"
@@ -162,7 +167,7 @@ const Contact = () => {
                 <div className="flex justify-end">
                   <button
                     type="submit"
-                    className={`${barlowBold.className} btn rounded-full btn-lg bg-btn-gradient text-white`}
+                    className={`${barlowBold.className} btn rounded-xl btn-lg bg-btn-gradient text-white`}
                   >
                     SEND MESSAGE
                   </button>
