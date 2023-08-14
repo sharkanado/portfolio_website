@@ -90,8 +90,11 @@ const Skills = () => {
     <div className="lg:w-1/3">
       <SectionHeader>Skills</SectionHeader>
       <div>
-        {technologies.map((item) => (
-          <div className="bg-[#333] mr-3 py-2 px-4 inline-block mb-3 rounded-full">
+        {technologies.map((item, idx) => (
+          <div
+            key={idx}
+            className="bg-[#333] mr-3 py-2 px-4 inline-block mb-3 rounded-full"
+          >
             <span className={montserratBold.className}>{item}</span>
           </div>
         ))}
