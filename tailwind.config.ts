@@ -20,6 +20,7 @@ const config: Config = {
     },
     extend: {
       backgroundImage: {
+        "main-bg": "url('/bg.png')",
         "text-gradient":
           "linear-gradient(90deg,  rgba(190,1,208,1) 0%, rgba(122,76,255,1) 50%)",
         "btn-gradient":

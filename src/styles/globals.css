@@ -4,10 +4,11 @@
 
 body,
 html {
-    @apply bg-grey text-white overscroll-none;
+    @apply text-white overscroll-none;
     scroll-behavior: smooth;
     min-width: 360px;
 }
+
 
 .gradientText {
     @apply text-transparent bg-clip-text bg-text-gradient;

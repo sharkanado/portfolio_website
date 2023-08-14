@@ -12,7 +12,7 @@ import {montserratBold, montserrat, barlowBold} from "@/src/styles/fonts";
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-main-bg bg-cover relative">
       <Navbar />
       <Hero />
       <MainWrapper>
@@ -20,13 +20,13 @@ export default function Home() {
         <Contact />
       </MainWrapper>
       <Footer />
-    </>
+    </div>
   );
 }
 
 const Hero = () => {
   return (
-    <div className="container mx-auto before:flex flex-col pt-40 lg:pb-56 pb-20">
+    <div className="container mx-auto before:flex flex-col pt-40 lg:pb-56 pb-20 z-30">
       <div className="flex flex-col lg:flex-row justify-between mx-5">
         <div>
           <p
