@@ -30,9 +30,9 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <div>
+    <div className="sticky top-0 left-0">
       <div
-        className="hidden md:block py-8 sticky top-0 left-0 transition-all 
+        className="hidden md:block py-8 transition-all 
        bg-opacity-50 bg-black"
       >
         <nav className="flex gap-12 px-5 container mx-auto justify-end">
