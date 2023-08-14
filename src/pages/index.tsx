@@ -139,7 +139,7 @@ const Contact = () => {
               get back to you as soon as possible!
             </Paragraph>
           </div>
-          <div className="max-w-2xl mx-auto p-5 bg-dark-grey shadow-md rounded-xl">
+          <div className="max-w-2xl mx-auto p-5 bg-opacity-50 bg-black rounded-xl">
             <form
               target="_blank"
               action="https://formsubmit.co/m.michalska4126@gmail.com"

@@ -13,7 +13,6 @@ const config: Config = {
       "light-grey": "#ddd",
       purple: "#7a4cff",
       pink: "#be01d0",
-      blackTrans: "#0000044",
       black: "#000",
       white: "#fff",
       transparent: "#ffffff00",
