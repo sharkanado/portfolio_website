@@ -9,7 +9,6 @@ const Navbar = () => {
     {name: "contact", link: "#contact"},
   ];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  console.log(isMenuOpen);
 
   return (
     <div>
