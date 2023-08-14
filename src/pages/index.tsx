@@ -105,23 +105,22 @@ const About = () => {
     <div className="lg:w-2/3 lg:mb-0 mb-20">
       <SectionHeader>About Me</SectionHeader>
       <Paragraph align="text-left">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
-        Vivamus euismod lacus ut nisi lobortis, eu fermentum nulla feugiat. Nunc
-        eget ligula sit amet purus porttitor malesuada. Sed ut quam eu libero
-        volutpat hendrerit vel vel magna. Phasellus sit amet quam vel tortor
-        gravida viverra. Nullam dictum, arcu et hendrerit consequat, purus purus
+        I'm a young and ambitious software developer. Currently, my job focus is
+        frontend but in the meantime I’m working on expanding my expertise into
+        the backend realm. I spend a lot of time learning new technologies and
+        practicing what I already can do.
         <br />
         <br />
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
-        Vivamus euismod lacus ut nisi lobortis, eu fermentum nulla feugiat. Nunc
-        eget ligula sit amet purus porttitor malesuada. Sed ut quam eu libero
-        volutpat hendrerit vel vel magna. Phasellus sit amet quam vel tortor
-        gravida viverra. Nullam dictum, arcu et hendrerit consequat, purus purus
-        porttitor nulla, eget cursus dui augue ac risus. In eu ex et urna
-        vestibulum fermentum. Proin eu nisi sed ligula fringilla ullamcorper id
-        in justo. Vivamus eget ligula nisl. Suspendisse non pharetra nulla. Sed
-        quis ante in elit feugiat lacinia at in ligula. Sed quis ex nec quam
-        aliquam blandit et nec urna.
+        I'm all about teaming up by writing code that's clean and follows the
+        smartest ways to do things. And you can bet I really care about making
+        the stuff I work on super user-friendly too.
+        <br />
+        <br />
+        I'm open to job opportunities where I can contribute, learn and grow. If
+        you have a good opportunity that matches my skills and experience then
+        don't hesitate to contact me.
+        <br />
+        <br />
       </Paragraph>
     </div>
   );
