@@ -35,13 +35,18 @@ const Navbar = () => {
             className="btn btn-ghost rounded-full btn-square"
             onClick={() => setIsMenuOpen((prev) => !prev)}
           >
-            {" "}
             <FaBars size={30} />
           </button>
         </div>
-        {isMenuOpen && (
-          <nav className="flex flex-col items-center mt-5 gap-12 px-5 container mx-auto justify-end">
-            {navLinks.map(({name, link}, idx) => (
+        <nav
+          className="flex-col flex items-center gap-12 px-5 container mx-auto justify-end transition-all"
+          style={{
+            height: isMenuOpen ? "10rem" : "0rem",
+            marginTop: isMenuOpen ? "3rem" : "0rem",
+          }}
+        >
+          {isMenuOpen &&
+            navLinks.map(({name, link}, idx) => (
               <a
                 key={idx}
                 href={link}
@@ -51,8 +56,7 @@ const Navbar = () => {
                 {name}
               </a>
             ))}
-          </nav>
-        )}
+        </nav>
       </div>
     </div>
   );
