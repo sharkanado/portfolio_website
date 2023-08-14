@@ -29,13 +29,30 @@ const Navbar = () => {
           ))}
         </nav>
       </div>
-      <div className="md:hidden fixed flex w-full justify-end top-0 left-0 p-5 bg-opacity-50 bg-black">
-        <button
-          className="btn btn-ghost rounded-full btn-square"
-          onClick={() => setIsMenuOpen((prev) => !prev)}
-        >
-          <FaBars size={30} />
-        </button>
+      <div className="md:hidden flex flex-col items-end w-full fixed  top-0 left-0 p-5 bg-opacity-50 bg-black">
+        <div className="">
+          <button
+            className="btn btn-ghost rounded-full btn-square"
+            onClick={() => setIsMenuOpen((prev) => !prev)}
+          >
+            {" "}
+            <FaBars size={30} />
+          </button>
+        </div>
+        {isMenuOpen && (
+          <nav className="flex flex-col items-center mt-5 gap-12 px-5 container mx-auto justify-end">
+            {navLinks.map(({name, link}, idx) => (
+              <a
+                key={idx}
+                href={link}
+                className={`${montserrat.className} text-xl uppercase hover:text-pink transition-all`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {name}
+              </a>
+            ))}
+          </nav>
+        )}
       </div>
     </div>
   );
