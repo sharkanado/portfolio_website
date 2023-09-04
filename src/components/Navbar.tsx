@@ -16,7 +16,8 @@ const Navbar = () => {
     if (
       menuRef.current &&
       !menuRef.current.contains(event.target as Node) &&
-      event.target !== buttonRef.current
+      buttonRef.current &&
+      !buttonRef.current.contains(event.target as Node)
     ) {
       setIsMenuOpen(false);
     }
@@ -38,7 +39,7 @@ const Navbar = () => {
     <div className="sticky top-0 left-0">
       <div
         className="hidden md:block py-8 transition-all 
-       bg-opacity-50 bg-black"
+       bg-opacity-80 bg-black"
       >
         <nav className="flex gap-12 px-5 container mx-auto justify-end">
           {navLinks.map(({name, link}, idx) => (
@@ -52,7 +53,7 @@ const Navbar = () => {
           ))}
         </nav>
       </div>
-      <div className="md:hidden flex flex-col items-end w-full fixed  top-0 left-0 p-5 bg-opacity-50 bg-black">
+      <div className="md:hidden flex flex-col items-end w-full fixed  top-0 left-0 p-5 bg-opacity-80 bg-black">
         <div className="">
           <button
             ref={buttonRef}
