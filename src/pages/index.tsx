@@ -39,10 +39,11 @@ const Hero = () => {
             />
           </p>
           <Paragraph align="text-left">
-            I am a budding Software Developer. Obsessed with clean code and
-            captivating designs. Proficient in HTML, CSS, and JavaScript.
-            Turning ideas into pixel-perfect reality. Eager to learn and
-            collaborate. <br />
+            I'm a software developer with a passion for clean code and
+            eye-catching design. Proficient in HTML, CSS, and JavaScript, I love
+            turning ideas into pixel-perfect, responsive experiences. Always
+            eager to learn, grow, and collaborate.
+            <br />
           </Paragraph>
           <p className={`${montserratBold.className} mt-4 text-xl text-purple`}>
             Let's build the web together!
@@ -85,6 +86,8 @@ const Skills = () => {
     "MaterialUI",
     "TailwindCSS",
     "Figma",
+    "Kotlin",
+    "test automation (Cypress)",
   ];
   return (
     <div className="lg:w-1/3">
