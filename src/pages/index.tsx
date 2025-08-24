@@ -4,6 +4,7 @@ import {
   MainWrapper,
   Navbar,
   Paragraph,
+  Projects,
   SectionHeader,
   SocialLinksHorizontal,
   SocialLinksVertical,
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <MainWrapper>
         <Info />
+        <Projects />
         <Contact />
       </MainWrapper>
       <Footer />

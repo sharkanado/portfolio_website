@@ -36,7 +36,7 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <div className="sticky top-0 left-0">
+    <div className="sticky top-0 left-0 z-30">
       <div
         className="hidden md:block py-8 transition-all 
        bg-opacity-80 bg-black"

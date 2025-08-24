@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Paragraph from "./Paragraph";
 import {SocialLinksHorizontal, SocialLinksVertical} from "./SocialLinks";
+import Projects from "./Projects";
 
 export {
   MainWrapper,
@@ -13,4 +14,5 @@ export {
   SocialLinksHorizontal,
   SocialLinksVertical,
   Paragraph,
+  Projects,
 };
